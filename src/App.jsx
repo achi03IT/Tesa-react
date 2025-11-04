@@ -1,6 +1,7 @@
 import React from 'react'
 import Tesa from './Tesa'
 import Footer from './Footer'
+import Header from './Header'
 
 const App = () => {
   const tesa = [
@@ -71,6 +72,8 @@ const App = () => {
   ];
   return (
     <>
+      <Header />
+
       <div className="container py-4">
         <h1 className='text-center mb-3'>Tesa Cafe</h1>
         <hr />
