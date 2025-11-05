@@ -71,26 +71,28 @@ const App = () => {
     },
   ];
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <div className="container py-4">
-        <h1 className='text-center mb-3'>Tesa Cafe</h1>
-        <hr />
+      <main className="flex-1">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h1 className="text-center mb-6">Tesa Cafe</h1>
+          <hr className="mb-8 border-gray-200" />
 
-        <div className="row">
-          {
-            tesa.map((t) => (
-              <div key={t.name} className="col-12 col-sm-6 col-md-4 mb-4">
-                <Tesa {...t} />
-              </div>
-            ))
-          }
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {
+              tesa.map((t) => (
+                <div key={t.name}>
+                  <Tesa {...t} />
+                </div>
+              ))
+            }
+          </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
-    </>
+    </div>
   )
 }
  

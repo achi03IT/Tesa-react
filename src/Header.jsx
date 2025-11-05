@@ -2,15 +2,17 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="navbar navbar-expand-md navbar-light bg-white border-bottom">
-      <div className="container py-2">
-        <a className="navbar-brand fw-bold" href="#">Tesa Cafe</a>
+    <header className="bg-white border-b">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex justify-between items-center">
+          <a className="text-xl font-bold text-gray-900" href="#">Tesa Cafe</a>
 
-        <div className="d-flex ms-auto gap-2">
-          <button type="button" className="btn btn-outline-secondary btn-sm">Home</button>
-          <button type="button" className="btn btn-outline-secondary btn-sm">Menu</button>
-          <button type="button" className="btn btn-outline-secondary btn-sm">About</button>
-          <button type="button" className="btn btn-outline-secondary btn-sm">Contact</button>
+          <nav className="flex gap-3">
+            <button type="button" className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors">Home</button>
+            <button type="button" className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors">Menu</button>
+            <button type="button" className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors">About</button>
+            <button type="button" className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors">Contact</button>
+          </nav>
         </div>
       </div>
     </header>
